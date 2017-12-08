@@ -4,6 +4,7 @@
 > a plugin to help webpack to generate unique chunk id based on module id
 ### why
 webpack has official plugins to generate a unique module id: [module-identifiers](https://webpack.js.org/guides/caching/#module-identifiers)
+
 but what about chunk id? I can't find a solution.
 
 what is chunk id? open a bundled file, you can find something like this:
