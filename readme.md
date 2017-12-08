@@ -20,7 +20,7 @@ and the number 117 is chunk id
 
 ### install
 ```
-npm install webpack-concat-plugin --save-dev
+npm install webpack-hashed-chunkids --save-dev
 ```
 
 ### features
