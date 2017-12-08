@@ -1,12 +1,12 @@
-# webpack-hash-trunid
+# webpack-hash-chunkid
 [![npm package](https://img.shields.io/npm/v/webpack-hashed-chunkids.svg)](https://www.npmjs.org/package/webpack-hashed-chunkids)
 [![npm downloads](http://img.shields.io/npm/dm/webpack-hashed-chunkids.svg)](https://www.npmjs.org/package/webpack-hashed-chunkids)
 > a plugin to help webpack to generate unique chunkid depend on module id
 ### why
 webpack has official plugins to generate a unique module id: [module-identifiers](https://webpack.js.org/guides/caching/#module-identifiers)
-but what about trunk id? I can't find a solution.
+but what about chunk id? I can't find a solution.
 
-what is trunk id? open a file, you can find something like this:
+what is chunk id? open a file, you can find something like this:
 
 ```
 webpackJsonp([117],{...})
