@@ -23,7 +23,7 @@ class HashedChunkIdsPlugin {
                         const modules = chunk.getModules();
                         let moduleIds = '';
 
-                        modules.forEach(iModule => (moduleIds += iModule.id));
+                        modules.sort().forEach(iModule => (moduleIds += iModule.id));
 
                         const hash = createHash(options.hashFunction);
                         hash.update(moduleIds);
