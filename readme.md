@@ -1,4 +1,4 @@
-# webpack-hash-chunkid
+# webpack-hashed-chunkids
 [![npm package](https://img.shields.io/npm/v/webpack-hashed-chunkids.svg)](https://www.npmjs.org/package/webpack-hashed-chunkids)
 [![npm downloads](http://img.shields.io/npm/dm/webpack-hashed-chunkids.svg)](https://www.npmjs.org/package/webpack-hashed-chunkids)
 > a plugin to help webpack to generate unique chunkid depend on module id
