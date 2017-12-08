@@ -1,6 +1,6 @@
 {
   "name": "webpack-hashed-chunkids",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "webpack unique chunk id",
   "main": "index.js",
   "scripts": {

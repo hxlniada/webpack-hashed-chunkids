@@ -34,7 +34,7 @@ const HashedChunkidsPlugin = require('webpack-hashed-chunkids');
 plugins: [
     new HashedChunkidsPlugin({
         hashFunction: 'md5', // The hashing algorithm to use, defaults to 'md5'. All functions from Node.JS' crypto.createHash are supported.
-        hashDigest: 'base64', // The encoding to use when generating the hash, defaults to 'base64'. All encodings from Node.JS' hash.digest are supported.
+        hashDigest: 'hex', // The encoding to use when generating the hash, defaults to 'hex'. All encodings from Node.JS' hash.digest are supported.
         hashDigestLength: 4 // The prefix length of the hash digest to use, defaults to 4.
     })
 ]

@@ -8,7 +8,7 @@ class HashedChunkIdsPlugin {
     constructor(options) {
         this.options = Object.assign({
             hashFunction: 'md5',
-            hashDigest: 'base64',
+            hashDigest: 'hex',
             hashDigestLength: 4
         }, options);
     }
