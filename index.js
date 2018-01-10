@@ -19,8 +19,15 @@ class HashedChunkIdsPlugin {
             const usedIds = new Set();
             compilation.plugin('before-chunk-ids', chunks => {
                 chunks.forEach(chunk => {
-                    if (chunk.id === null && chunk.getModules) {
-                        const modules = chunk.getModules();
+                    if (chunk.id === null) {
+                        let modules = [];
+                        if (chunk.getModules) {
+                            modules = chunk.getModules();
+                        }
+                        else if (chunk.modules) {
+                            modules = chunk.modules();
+                        }
+
                         let moduleIds = '';
 
                         modules.sort().forEach(iModule => (moduleIds += iModule.id));
