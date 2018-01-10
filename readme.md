@@ -32,6 +32,7 @@ npm install webpack-hashed-chunkids --save-dev
 const HashedChunkidsPlugin = require('webpack-hashed-chunkids');
 
 plugins: [
+    new webpack.HashedModuleIdsPlugin(),
     new HashedChunkidsPlugin({
         hashFunction: 'md5', // The hashing algorithm to use, defaults to 'md5'. All functions from Node.JS' crypto.createHash are supported.
         hashDigest: 'hex', // The encoding to use when generating the hash, defaults to 'hex'. All encodings from Node.JS' hash.digest are supported.
