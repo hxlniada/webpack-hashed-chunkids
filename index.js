@@ -25,7 +25,7 @@ class HashedChunkIdsPlugin {
                             modules = chunk.getModules();
                         }
                         else if (chunk.modules) {
-                            modules = chunk.modules();
+                            modules = chunk.modules;
                         }
 
                         let moduleIds = '';
