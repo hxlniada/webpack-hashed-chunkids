@@ -15,9 +15,9 @@ class HashedChunkIdsPlugin {
 
     apply(compiler) {
         const options = this.options;
-        compiler.plugin('compilation', compilation => {
+        compiler.hooks.compilation.tap('HashedChunkIdsPlugin', compilation => {
             const usedIds = new Set();
-            compilation.plugin('before-chunk-ids', chunks => {
+            compilation.hooks.beforeChunkIds.tap('HashedChunkIdsPlugin', chunks => {
                 chunks.forEach(chunk => {
                     if (chunk.id === null) {
                         let modules = [];
